@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IsraBest — ניהול מבנים לבניינים קטנים ובינוניים</title>
+  <meta name="description" content="IsraBest — ניהול ותחזוקה מקצועית לבניינים קטנים ובינוניים. מאז 1993. מעל 150 בניינים פעילים.">
+  <link rel="stylesheet" href="v2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- ============================================
+     HEADER / NAVIGATION
+     ============================================ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo" aria-label="IsraBest — דף הבית">
+      <!-- Inline SVG Logo -->
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="14" width="16" height="22" rx="2" stroke="#1A5C28" stroke-width="2.5" fill="none"/>
+        <rect x="22" y="6" width="16" height="30" rx="2" stroke="#8DC63F" stroke-width="2.5" fill="none"/>
+        <rect x="6" y="18" width="4" height="4" rx="0.5" fill="#8DC63F"/>
+        <rect x="6" y="26" width="4" height="4" rx="0.5" fill="#8DC63F"/>
+        <rect x="12" y="18" width="2" height="4" rx="0.5" fill="#B8D400"/>
+        <rect x="12" y="26" width="2" height="4" rx="0.5" fill="#B8D400"/>
+        <rect x="26" y="10" width="4" height="4" rx="0.5" fill="#1A5C28"/>
+        <rect x="26" y="18" width="4" height="4" rx="0.5" fill="#1A5C28"/>
+        <rect x="26" y="26" width="4" height="4" rx="0.5" fill="#1A5C28"/>
+        <rect x="33" y="10" width="2" height="4" rx="0.5" fill="#B8D400"/>
+        <rect x="33" y="18" width="2" height="4" rx="0.5" fill="#B8D400"/>
+        <rect x="33" y="26" width="2" height="4" rx="0.5" fill="#B8D400"/>
+      </svg>
+      <span>IsraBest</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="ניווט ראשי">
+      <a href="#why">למה אנחנו</a>
+      <a href="#services">מה כולל</a>
+      <a href="#packages">חבילות</a>
+      <a href="#buildings">בניינים</a>
+      <a href="#testimonials">לקוחות</a>
+      <a href="#faq">שאלות</a>
+      <a href="#contact" class="nav-cta">השאירו פרטים</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="תפריט" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="nav-mobile" id="mobileNav" aria-label="ניווט נייד">
+  <a href="#why">למה אנחנו</a>
+  <a href="#services">מה כולל</a>
+  <a href="#packages">חבילות</a>
+  <a href="#buildings">בניינים</a>
+  <a href="#testimonials">לקוחות</a>
+  <a href="#faq">שאלות</a>
+  <a href="#contact" class="nav-cta-mobile">השאירו פרטים</a>
+</nav>
+
+
+<!-- ============================================
+     SECTION 1: HERO
+     ============================================ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="./assets/hero-bg.jpg" alt="" loading="eager" fetchpriority="high">
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>גם בניין קטן יכול להתנהל ברמה גבוהה</h1>
+
+      <p class="hero-subtitle">
+        בלי לרדוף אחרי ניקיון, תקלות ושכנים שלא משלמים<br>
+        אנחנו לוקחים על עצמנו את הניהול והתחזוקה — כדי שאתה לא תישאר לבד מול בעיות ושכנים
+      </p>
+
+
+    </div>
+
+    <div class="hero-form-wrapper" id="contact">
+      <h3>השאירו פרטים — ונחזור אליכם</h3>
+      <form class="hero-form" onsubmit="return false;">
+        <div class="form-field">
+          <input type="text" placeholder="שם מלא" required aria-label="שם מלא">
+        </div>
+        <div class="form-field">
+          <input type="tel" placeholder="טלפון" required aria-label="טלפון">
+        </div>
+        <div class="form-field">
+          <input type="text" placeholder="כתובת הבניין" aria-label="כתובת הבניין">
+        </div>
+        <div class="form-field">
+          <input type="number" placeholder="מספר דיירים" aria-label="מספר דיירים">
+        </div>
+        <button type="submit" class="btn-primary btn-dark">
+          בוא נבדוק איך מורידים את זה ממך
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><polyline points="12 5 5 12 12 19"/></svg>
+        </button>
+        <p class="form-note">נחזור אליכם בהקדם — בלי התחייבות ובלי לחץ</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 2: WHY ISRABEST (8 CARDS)
+     ============================================ -->
+<section class="section section-alt" id="why">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>למה דיירים עוברים ל-IsraBest — ונרגעים</h2>
+      <p>אם כבר עבדתם עם חברת ניהול — אתם כנראה מכירים את זה: הבטחות יש. מענה — פחות.<br>כאן זה עובד אחרת:</p>
+    </div>
+
+    <div class="advantages-grid">
+      <!-- Card 1: Experience -->
+      <div class="advantage-card reveal">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/adv-experience.jpg" alt="ניסיון מוכח" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניסיון מוכח משנת 1993</h3>
+        <p>מאז 1993 אנחנו לא "מנהלים בניינים" — אנחנו חיים אותם ביום־יום</p>
+      </div>
+
+      <!-- Card 2: 150+ Buildings -->
+      <div class="advantage-card reveal reveal-delay-1">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/icon-building.jpg" alt="150 בניינים" width="200" height="200" loading="lazy">
+        </div>
+        <h3>מעל 150 בניינים פעילים</h3>
+        <p>מעל 150 בניינים שכבר הפסיקו לרדוף אחרי בעיות</p>
+      </div>
+
+      <!-- Card 3: Field Management -->
+      <div class="advantage-card reveal reveal-delay-2">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/proc-inspect.jpg" alt="ניהול מהשטח" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניהול "מהשטח" ולא רק מהמשרד</h3>
+        <p>אנחנו צמחנו מתוך האחזקה. אצלנו הניהול הוא אקטיבי בשטח — בודקים, מתקנים ומונעים תקלות לפני שהן קורות</p>
+      </div>
+
+      <!-- Card 4: Small Buildings Specialization -->
+      <div class="advantage-card reveal reveal-delay-3">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/icon-team.jpg" alt="התמחות בבניינים קטנים" width="200" height="200" loading="lazy">
+        </div>
+        <h3>התמחות בבניינים קטנים ובינוניים</h3>
+        <p>בניינים קטנים הם לא "תיק קטן" — הם ההתמחות שלנו</p>
+      </div>
+
+      <!-- Card 5: Zero Bureaucracy -->
+      <div class="advantage-card reveal">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/adv-response.jpg" alt="אפס בירוקרטיה" width="200" height="200" loading="lazy">
+        </div>
+        <h3>אפס בירוקרטיה, מקסימום ביצוע</h3>
+        <p>אין "פתחנו פנייה". יש: עונים, מגיעים, מטפלים</p>
+      </div>
+
+      <!-- Card 6: Transparent Management -->
+      <div class="advantage-card reveal reveal-delay-1">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/adv-stability.jpg" alt="ניהול שקוף" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניהול ביצועי ושקוף</h3>
+        <p>אנו עובדים עם מערכת שבה כל פעולה מתועדת ושקופה לכם באפליקציה 24/7</p>
+      </div>
+
+      <!-- Card 7: Polite Collection -->
+      <div class="advantage-card reveal reveal-delay-2">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/proc-contact.jpg" alt="גבייה אדיבה" width="200" height="200" loading="lazy">
+        </div>
+        <h3>גבייה אדיבה ויעילה</h3>
+        <p>אנו משלבים ידע משפטי עם גישה שירותית כדי להבטיח קופה מלאה — בלי שאתה תיכנס לעימותים</p>
+      </div>
+
+      <!-- Card 8: Personal Service -->
+      <div class="advantage-card reveal reveal-delay-3">
+        <div class="advantage-icon photo-icon">
+          <img src="./assets/icon-supervisor.jpg" alt="שירות אישי" width="200" height="200" loading="lazy">
+        </div>
+        <h3>שירות אישי לאורך זמן</h3>
+        <p>יש לך בן אדם שמכיר את הבניין שלך — ולא מוקד שמתחלף כל שבוע</p>
+      </div>
+    </div>
+
+    <div class="advantages-bottom reveal">
+      <p>ניהול אישי מקצועי ושקוף<br>בסוף, זה פשוט: הבניין מתפקד — ואתה מפסיק להתעסק בו כל הזמן</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 3: SERVICES (5 CARDS + 1 SPECIAL)
+     ============================================ -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>ניהול 360°: אנחנו לוקחים את הבניין על עצמנו — כדי שאתם תוכלו פשוט לגור בשקט</h2>
+      <p>ניהול ותפעול מלא של הבניין בשקיפות מקסימלית</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-card reveal">
+        <div class="service-icon photo-icon">
+          <img src="./assets/proc-schedule.jpg" alt="ניהול שוטף" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניהול שוטף ומנהלתי</h3>
+        <p>יש מי שמנהל את הבניין בפועל — לא רק על הנייר. ניהול כספי ושקיפות. אנחנו גובים, עוקבים ומנהלים — בלי שאתה תרדוף אחרי שכנים</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon photo-icon">
+          <img src="./assets/adv-response.jpg" alt="תחזוקה מונעת" width="200" height="200" loading="lazy">
+        </div>
+        <h3>תחזוקה מונעת ותיקון תקלות</h3>
+        <p>תקלות לא נשארות שבועות — מטפלים בהן לפני שהן הופכות לבעיה. מוקד אנושי זמין 24/7 לכל תקלה</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon photo-icon">
+          <img src="./assets/proc-contact.jpg" alt="ספקים וביטוחים" width="200" height="200" loading="lazy">
+        </div>
+        <h3>עבודה מול ספקים וביטוחים</h3>
+        <p>לא צריך להבין באינסטלטורים וביטוחים — אנחנו מטפלים בזה בשבילך</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card reveal">
+        <div class="service-icon photo-icon">
+          <img src="./assets/adv-stability.jpg" alt="סרבני תשלום" width="200" height="200" loading="lazy">
+        </div>
+        <h3>טיפול בסרבני תשלום</h3>
+        <p>פתרון בעיות תשלום בצורה מקצועית ומשפטית, מבלי ליצור חיכוך ואי-נעימות בין שכנים</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon photo-icon">
+          <img src="./assets/icon-building.jpg" alt="אחזקה מלאה" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניהול אחזקה מלאה</h3>
+        <p>יש כתובת אחת שמטפלת בהכל — לא 5 אנשים שונים. יש מי שמטפל בבניין — ואתה מפסיק להתעסק בו כל יום</p>
+      </div>
+
+      <!-- Service SPECIAL: Cleaning -->
+      <div class="service-card service-card--special reveal reveal-delay-2">
+        <div class="service-icon photo-icon">
+          <img src="./assets/icon-team.jpg" alt="ניקיון קבוע" width="200" height="200" loading="lazy">
+        </div>
+        <h3>ניקיון קבוע — כתוספת לפי בחירה</h3>
+        <p>מתבצע על ידי עובדים קבועים שלנו עם פיקוח שוטף. אותו צוות, רמה יציבה, בלי הפתעות</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 4: PRICING PACKAGES
+     ============================================ -->
+<section class="section section-alt" id="packages">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>בואו נבין יחד מה הבניין שלכם באמת צריך</h2>
+      <p>לא בטוחים מה נכון לבניין שלכם? אנחנו עוזרים להחליט — בלי התחייבות</p>
+    </div>
+
+    <div class="packages-grid">
+      <!-- Package 1: Recommended -->
+      <div class="package-card package-card--recommended reveal">
+        <div class="package-badge">מומלץ</div>
+        <h3>ניהול מלא — פשוט להפסיק להתעסק בבניין</h3>
+        <p class="package-subtitle">כל מה שצריך כדי שהבניין יתפקד כמו שצריך</p>
+
+        <p class="package-label">מה זה אומר בפועל:</p>
+        <ul class="package-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            חדר מדרגות ולובי נקי — בלי להזכיר ובלי לרדוף
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            תקלות מטופלות בזמן — לא נגררות שבועות
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            יש מי שעונה כשצריך 24/7 — גם במצבים דחופים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            גביית כספים מסודרת — בלי לרדוף אחרי שכנים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            יש מי שמתנהל מול ספקים, ביטוחים וטכנאים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            הכל מנוהל ומפוקח — בלי הפתעות באמצע
+          </li>
+        </ul>
+
+        <div class="package-note">
+          הניקיון מתבצע על ידי עובדים קבועים שלנו עם פיקוח שוטף<br>
+          לא קבלן מתחלף — רמה יציבה לאורך זמן
+        </div>
+
+        <p class="package-target">למי זה מתאים: לבניינים שבהם נמאס להיות "האחראי" על הכל</p>
+
+        <a href="#contact" class="btn-primary">כן, אני רוצה להוריד את זה ממני</a>
+      </div>
+
+      <!-- Package 2: Standard -->
+      <div class="package-card package-card--standard reveal reveal-delay-1">
+        <h3>יש לכם ניקיון? אנחנו נטפל בכל השאר</h3>
+        <p class="package-subtitle">ניהול ותחזוקה מלאה של הבניין — בלי שתצטרכו להיכנס לזה</p>
+
+        <p class="package-label">מה זה אומר בפועל:</p>
+        <ul class="package-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            יש מי שמטפל בכל תקלה — בלי שתנהלו את זה
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            לא אתם מדברים עם אינסטלטורים, חשמלאים וספקים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            גביית כספים מסודרת — בלי לרדוף אחרי שכנים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            יש מי שעוקב שהדברים באמת קורים — לא רק מבטיחים
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            אתם לא הכתובת לכל בעיה בבניין
+          </li>
+        </ul>
+
+        <div class="package-note">ניקיון קבוע לא כלול</div>
+
+        <p class="package-target">למי זה מתאים: לבניינים שבהם הניקיון כבר מסודר — אבל כל השאר נופל שוב ושוב על אותו אדם</p>
+
+        <a href="#contact" class="btn-primary">בואו נבדוק אם זה מתאים לבניין שלנו</a>
+      </div>
+    </div>
+
+    <div class="packages-bottom reveal">
+      <p><strong>לא משנה מה תבחרו — אתם לא נשארים לבד עם הבניין</strong><br>בסוף, זה לא עניין של חבילה — זה עניין של האם יש מי שלוקח אחריות על הבניין שלכם</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 5: BUILDINGS / EXAMPLES
+     ============================================ -->
+<section class="section" id="buildings">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>בניינים כמו שלכם — שהפסיקו לרדוף אחרי בעיות</h2>
+      <p>בניינים קטנים בדיוק כמו שלכם — שנמאס להם להתעסק בהכל לבד</p>
+    </div>
+
+    <div class="buildings-grid">
+      <!-- Building 1 -->
+      <div class="building-card reveal">
+        <div class="building-img">
+          <img src="./assets/building-1.jpg" alt="בניין ברח׳ ויצמן 8, גבעתיים" loading="lazy">
+        </div>
+        <div class="building-info">
+          <h3>גבעתיים · רח׳ ויצמן 8</h3>
+          <p>10 דירות · ניהול מלא<br>היום הבניין מתוחזק קבוע בלי לרדוף אחרי אף אחד</p>
+        </div>
+      </div>
+
+      <!-- Building 2 -->
+      <div class="building-card reveal reveal-delay-1">
+        <div class="building-img">
+          <img src="./assets/building-2.jpg" alt="בניין ברח׳ ביאליק 23, רמת גן" loading="lazy">
+        </div>
+        <div class="building-info">
+          <h3>רמת גן · רח׳ ביאליק 23</h3>
+          <p>16 דירות · עברו מחוסר מענה וניהול מבולגן לבניין שמתוחזק באופן קבוע</p>
+        </div>
+      </div>
+
+      <!-- Building 3 -->
+      <div class="building-card reveal reveal-delay-2">
+        <div class="building-img">
+          <img src="./assets/building-3.jpg" alt="בניין ברח׳ הדקל 5, הוד השרון" loading="lazy">
+        </div>
+        <div class="building-info">
+          <h3>הוד השרון · רח׳ הדקל 5</h3>
+          <p>8 דירות · עברו ממנקים מתחלפים למנקים קבועים תחת פיקוח</p>
+        </div>
+      </div>
+
+      <!-- Building 4 -->
+      <div class="building-card reveal reveal-delay-3">
+        <div class="building-img">
+          <img src="./assets/building-4.jpg" alt="בניין ברח׳ התאנה 14, תל מונד" loading="lazy">
+        </div>
+        <div class="building-info">
+          <h3>תל מונד · רח׳ התאנה 14</h3>
+          <p>12 דירות · בניין חדש שהוקם נכון מהיום הראשון</p>
+        </div>
+      </div>
+
+      <!-- Building 5 (icon, no photo) -->
+      <div class="building-card reveal reveal-delay-4">
+        <div class="building-img building-img--icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="building-info">
+          <h3>פתח תקווה · רח׳ העצמאות 31</h3>
+          <p>20 דירות · כבר לא תלוי באדם אחד שמנהל הכל</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buildings-cta reveal">
+      <p>ניתן לדבר עם חלק מהבניינים שלנו ולהתרשם ישירות</p>
+      <a href="#contact" class="btn-primary" style="width:auto; display:inline-flex;">רוצים שגם אצלכם זה יעבוד ככה? בואו נדבר</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 6: TESTIMONIALS
+     ============================================ -->
+<section class="section section-alt" id="testimonials">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>מה קורה כשמישהו סוף סוף לוקח אחריות על הבניין</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card reveal">
+        <span class="testimonial-quote-mark">"</span>
+        <blockquote>פעם הייתי מתקשר ואף אחד לא היה חוזר אליי. היום יש מי שעונה — וגם מטפל. זה פשוט עובד</blockquote>
+        <p class="testimonial-context">הבעיה הייתה שאין מענה. היום כל דבר מטופל בלי לרדוף</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card reveal reveal-delay-1">
+        <span class="testimonial-quote-mark">"</span>
+        <blockquote>פעם כל דבר היה נופל עליי. היום אני לא הכתובת לכל בעיה בבניין</blockquote>
+        <p class="testimonial-context">יש סדר ויש כתובת</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card reveal reveal-delay-2">
+        <span class="testimonial-quote-mark">"</span>
+        <blockquote>לפני זה כל חודש מנקה אחר. היום יש יציבות — והבניין נראה אחרת</blockquote>
+        <p class="testimonial-context">יותר נקי, יותר מסודר, פחות תקלות</p>
+      </div>
+    </div>
+
+    <div class="testimonials-extra">
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card reveal">
+        <span class="testimonial-quote-mark">"</span>
+        <blockquote>הכי חשוב — אין ריבים על כסף וניקיון. זה ירד מאיתנו לגמרי</blockquote>
+        <p class="testimonial-context">יש על מי לסמוך</p>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="testimonial-card reveal reveal-delay-1">
+        <span class="testimonial-quote-mark">"</span>
+        <blockquote>אם היינו יודעים שזה ככה — היינו עוברים הרבה קודם</blockquote>
+        <p class="testimonial-context">ההבדל מורגש מהר מאוד</p>
+      </div>
+    </div>
+
+    <div class="testimonials-cta reveal">
+      <p>רוצים להרגיש את זה גם אצלכם בבניין?</p>
+      <a href="#contact" class="btn-primary" style="width:auto; display:inline-flex;">בואו נדבר</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 6b: VIDEO TESTIMONIALS
+     ============================================ -->
+<section class="section" id="video-testimonials">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>שומעים ישירות מהדיירים</h2>
+      <p>ועדי בית שעובדים איתנו מספרים על השינוי</p>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-card reveal">
+        <div class="video-thumb" onclick="this.closest('.video-card').classList.toggle('playing')">
+          <img src="./assets/video-thumb-1.jpg" alt="דוד א׳ — גבעתיים" loading="lazy">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <span class="video-duration">1:42</span>
+        </div>
+        <div class="video-card-info">
+          <p class="video-quote">הבניין נראה אחרת לגמרי״</p>
+          <p class="video-source">דוד א׳ · ועד בית, גבעתיים</p>
+        </div>
+      </div>
+
+      <div class="video-card reveal reveal-delay-1">
+        <div class="video-thumb" onclick="this.closest('.video-card').classList.toggle('playing')">
+          <img src="./assets/video-thumb-2.jpg" alt="נועה מ׳ — רמת גן" loading="lazy">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <span class="video-duration">2:15</span>
+        </div>
+        <div class="video-card-info">
+          <p class="video-quote">סוף סוף צוות שנשאר ועובד כמו שצריך״</p>
+          <p class="video-source">נועה מ׳ · ועד בית, רמת גן</p>
+        </div>
+      </div>
+
+      <div class="video-card reveal reveal-delay-2">
+        <div class="video-thumb" onclick="this.closest('.video-card').classList.toggle('playing')">
+          <img src="./assets/video-thumb-3.jpg" alt="עמית ב׳ — הוד השרון" loading="lazy">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <span class="video-duration">1:58</span>
+        </div>
+        <div class="video-card-info">
+          <p class="video-quote">יש עם מי לדבר — זה משנה הכול״</p>
+          <p class="video-source">עמית ב׳ · ועד בית, הוד השרון</p>
+        </div>
+      </div>
+
+      <div class="video-card reveal reveal-delay-3">
+        <div class="video-thumb" onclick="this.closest('.video-card').classList.toggle('playing')">
+          <img src="./assets/video-thumb-4.jpg" alt="שרה ג׳ — תל מונד" loading="lazy">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <span class="video-duration">2:30</span>
+        </div>
+        <div class="video-card-info">
+          <p class="video-quote">הפתרון שחיפשנו כבר שנים״</p>
+          <p class="video-source">שרה ג׳ · ועד בית, תל מונד</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SECTION 7: FAQ
+     ============================================ -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <h2>שאלות נפוצות</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          איך אני יודע שזה לא יהיה טוב רק בהתחלה ואז ידרדר?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">זו השאלה הכי חשובה, כי רוב הלקוחות שלנו הגיעו אחרי אכזבה בדיוק מזה. ההבדל אצלנו הוא נוכחות בשטח ובקרה קבועה — לא "ניהול על הנייר". אנחנו שם גם אחרי חצי שנה ושנה, לא רק בהתחלה.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          למה בכלל צריך חברת ניהול לבניין קטן?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">כי אחרת זה נופל על אדם אחד — ונשחק. אנחנו הופכים את זה למערכת שעובדת, בלי ריבים ובלי עומס על אף אחד.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          האם אנחנו מאבדים שליטה על הכסף?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">ממש לא. אתם מחליטים — אנחנו מבצעים. יש שקיפות מלאה בכל רגע.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          האם אתם עובדים גם עם בניינים קטנים?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">חד משמעית כן. זו ההתמחות שלנו. בניינים קטנים אצלנו לא "שוליים" — אלא במרכז.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          מה קורה אם יש תקלה בשעה לא רגילה?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">המוקד שלנו זמין עבורכם לדיווחי חירום 24/7. יש מי שעונה. יש מי שמגיע. ולא נשארים לבד עם זה.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          מה קורה עם דייר שלא משלם?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">אנחנו מטפלים בזה מקצועית — בלי שתיכנסו לעימותים עם שכנים.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          מי מבצע את הניקיון בפועל?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">אנחנו עובדים עם צוותים קבועים בפיקוח — לא אנשים מתחלפים כל הזמן.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          אפשר לקחת רק ניהול ותחזוקה בלי ניקיון?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">בהחלט. אנחנו נתאים את השירות למה שיש לכם — לא להפך.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          במה אתם שונים מחברות ניהול אחרות?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">אנחנו לא מוקד ולא "חברה על הנייר". יש אצלנו אנשים בשטח שמכירים את הבניין ומטפלים בו בפועל — וזה כל ההבדל.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          האם כל המידע על הבניין נגיש לנו?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">כן. אתם רואים הכל — דוחות כספיים, תשלומים, תקלות ועדכונים בזמן אמת. אין "מה קורה שם מאחורי הקלעים".</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          אפשר לדבר עם ועד בית שכבר עובד איתכם?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">כן. נשמח לחבר אתכם לבניינים דומים לשלכם — כדי שתשמעו מהם איך זה נראה בפועל.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          כמה זה עולה בפועל?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">המחיר מותאם אישית לכל בניין — אבל כמעט תמיד חוסך כסף בטווח זמן.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          האם אתם הכי זולים בשוק?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">הגישה שלנו היא לא להיות "הכי זולים", אלא להיות הכי משתלמים לטווח ארוך.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          הבניין שלנו חדש ואין בו עדיין שום סדר – איך אתם נכנסים לתמונה?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">זהו בדיוק הזמן האידיאלי להתחיל. אנחנו בונים מההתחלה מערכת מסודרת — גבייה, תחזוקה וניהול — כדי שלא תיכנסו לכאוס בהמשך.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          איך מתחילים לעבוד יחד?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">תהליך פשוט וללא התחייבות: משאירים פרטים → מדברים → מתאימים פתרון. פשוט.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          מתי הזמן הנכון לעבור לחברת ניהול?
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">ברגע שנמאס לכם לרדוף אחרי בעיות. ככל שמחכים — הבעיות מצטברות ועולות יותר.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FINAL CTA SECTION
+     ============================================ -->
+<section class="final-cta" id="final-cta">
+  <div class="final-cta-inner reveal">
+    <h2>הגיע הזמן להפסיק לנהל את הבניין לבד</h2>
+    <p class="subtitle">אם נמאס לכם לרדוף אחרי ניקיון, תקלות ושכנים — אנחנו כאן לקחת את זה על עצמנו</p>
+    <p class="text-block">
+      לא צריך להתחייב עכשיו<br>
+      לא צריך לשכנע את כל השכנים<br>
+      פשוט משאירים פרטים — ומבינים יחד מה נכון לבניין שלכם
+    </p>
+
+    <ul class="final-benefits">
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        שיחה קצרה בלי התחייבות
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        הבנה ברורה של מצב הבניין
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        המלצה אמיתית — לא "דחיפה למכירה"
+      </li>
+    </ul>
+
+    <a href="#contact" class="btn-primary">בואו נבדוק איך מורידים את זה מכם</a>
+    <p class="form-note">נחזור אליכם בהקדם — בלי התחייבות ובלי לחץ</p>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">IsraBest</div>
+    <p class="footer-slogan">ניהול מבנים לבניינים קטנים ובינוניים</p>
+
+    <div class="footer-contacts">
+      <a href="tel:050-4372323">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        050-4372323
+      </a>
+      <a href="mailto:israbest.service@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        israbest.service@gmail.com
+      </a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">מדיניות פרטיות</a>
+      <a href="#">תנאי שימוש</a>
+      <a href="#">הצהרת נגישות</a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copyright">© כל הזכויות שמורות ל־IsraBest</p>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // --- Sticky header scroll effect ---
+  const header = document.querySelector('.site-header');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = window.scrollY;
+  }, { passive: true });
+
+  // --- Mobile hamburger menu ---
+  const hamburger = document.getElementById('hamburgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.contains('open');
+    mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+    hamburger.setAttribute('aria-expanded', !isOpen);
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+
+  // Close mobile nav on link click
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // --- FAQ accordion ---
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle clicked
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // --- Scroll reveal (IntersectionObserver) ---
+  const revealElements = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+  } else {
+    // Fallback: show all
+    revealElements.forEach(el => el.classList.add('visible'));
+  }
+
+  // --- Smooth scroll for anchor links ---
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
